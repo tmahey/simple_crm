@@ -1,0 +1,25 @@
+<div class="column is-one-quarter">
+  <div class="card" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+    <div class="card-content">
+      <p class="title is-4"><%= customer.full_name %></p>
+
+      <% if customer.image.attached? %>
+        <div class="card-image mb-4">
+          <figure class="image is-4by5">
+            <%= image_tag customer.image, style: "object-fit: cover;" %>
+          </figure>
+        </div>
+      <% end %>
+
+      <% if customer.notes.present? %>
+        <p class="mb-3"><strong>Notes:</strong> <%= customer.notes %></p>
+      <% end %>
+
+      <p class="mb-3"><%= customer.phone_number %></p>
+
+      <p class="has-text-grey">
+        <%= customer.email_address.presence || "No email provided" %>
+      </p>
+    </div>
+  </div>
+</div>
