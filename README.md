@@ -94,9 +94,8 @@ rails s
 
 ## Application Routes
 
-| Page | URL |
-| :--- | :--- |
-| All Customers | `http://127.0.0.1:3000/` |
-| Alphabetized Customers | `http://127.0.0.1:3000/customers/alphabetized` |
-| Customers Missing Email | `http://127.0.0.1:3000/customers/missing_email` |
-| ActiveAdmin Dashboard | `http://127.0.0.1:3000/admin` |
+
+| All Customers : `http://127.0.0.1:3000/` |
+| Alphabetized Customers : `http://127.0.0.1:3000/customers/alphabetized` |
+| Customers Missing Email : `http://127.0.0.1:3000/customers/missing_email` |
+| ActiveAdmin Dashboard : `http://127.0.0.1:3000/admin` |
